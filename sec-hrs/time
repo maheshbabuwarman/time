@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int sth = 3600, stm = 60, n, hrs, mins, secs;
+
+	cout << "enter time in seconds : " << endl;
+	cin >> n;
+
+	hrs = (n / sth);
+	mins = (n-sth)/60;
+	secs = (n - sth) - (60 * mins);
+
+	cout << hrs << " Hours ," ;
+	cout << mins << " Minutes ,";
+	cout << secs << " Seconds " << endl;
+
+}
